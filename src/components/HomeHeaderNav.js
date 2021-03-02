@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as NavLink } from 'react-scroll';
-import background from '../assets/HeroImageSmall.png';
-import decoration from '../assets/Decoration.svg';
+import background from '../assets/CF-hero.png';
 
 export const HomeHeaderNav = () => {
     return (
@@ -11,88 +10,67 @@ export const HomeHeaderNav = () => {
                 <header className='header' style={{ 'backgroundImage': `url(${background})` }}>
                     <nav className='nav'>
                         <div className='nav__navbarContainer'>
-                            <div className='nav__buttons'>
-                                <div className='nav__btn'>
-                                    <LinkR to="/login" className='nav__btnLinks'>Zaloguj</LinkR>
-                                </div>
-                                <div className='nav__btn'>
-                                    <LinkR to="/register" className='nav__btnLinks nav__btnLinks--active'>Załóz konto</LinkR>
-                                </div>
-                            </div>
                             <ul className='nav__menu'>
                                 <li className='nav__item'>
                                     <NavLink
-                                        to="/"
+                                        to="aboutUs"
                                         className='nav__links'
                                         smooth={true}
                                         duration={500}
                                         spy={true}
                                         exact='true'
                                         offset={-80}>
-                                        Start
-                                </NavLink>
+                                        o nas
+                                    </NavLink>
                                 </li>
                                 <li className='nav__item'>
                                     <NavLink
-                                        to='steps'
+                                        to='projects'
                                         className='nav__links'
                                         smooth={true}
                                         duration={500}
                                         spy={true}
                                         exact='true'
                                         offset={-80}>
-                                        O co chodzi?
-                                </NavLink>
+                                        realizacje
+                                    </NavLink>
                                 </li>
                                 <li className='nav__item'>
                                     <NavLink
-                                        to='aboutUs'
+                                        to='offer'
                                         className='nav__links'
                                         smooth={true}
                                         duration={500}
                                         spy={true}
                                         exact='true'
                                         offset={-80}>
-                                        O nas
-                                </NavLink>
+                                        oferta
+                                    </NavLink>
                                 </li>
-                                <li className='nav__item'>
+                                <li className='nav__item active'>
                                     <NavLink
                                         to='foundations'
-                                        className='nav__links'
+                                        className='nav__links '
                                         smooth={true}
                                         duration={500}
                                         spy={true}
                                         exact='true'
                                         offset={-80}>
-                                        Fundacja i organizacje
-                                </NavLink>
-                                </li>
-                                <li className='nav__item'>
-                                    <NavLink
-                                        to='contact'
-                                        className='nav__links'
-                                        smooth={true}
-                                        duration={500}
-                                        spy={true}
-                                        exact='true'
-                                        offset={-80}>
-                                        Kontakt
-                                </NavLink>
+                                        kontakt
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
                     </nav>
                     <div className='header__container'>
                         <div className='header__textWrapper'>
-                            <h1 className='header__textH1'>Zacznij pomagać!<br />Oddaj niechciane rzeczy w zaufane ręce</h1>
-                            <img src={decoration} className='header__decorationImage' alt="decoration" />
+                            <h1 className='header__textH1'>Energia i ciepło<br />dla twojego domu<br />panele solarne</h1>
                             <div className='header__buttonsWrapper'>
-                                <button className='btn'>
-                                    <LinkR to="/login" className='btnLinks'>oddaj<br />rzeczy</LinkR>
+                                <button className='btn btn--left'>
+                                    <LinkR to="/login" className='btnLinks'>dowiedz się więcej</LinkR>
                                 </button>
                                 <button className='btn'>
-                                    <LinkR to="/login" className='btnLinks'>zorganizuj<br />zbiórkę</LinkR>
+                                    <LinkR to="/login" className='btnLinks'>zamów kontakt</LinkR>
                                 </button>
                             </div>
                         </div>

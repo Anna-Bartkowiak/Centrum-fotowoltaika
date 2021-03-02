@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import decoration from "../assets/Decoration.svg";
 import Foundations from "./Foundations";
-import Pagination from "./Pagination";
 
 const HomeFoundations = () => {
     const [foundations] = useState([
         {
-            title: "Fundacja “Dbam o Zdrowie”",
+            title: "Elektrownie solarne",
             description:
                 "Cel i Misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
             items: "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
@@ -138,9 +137,8 @@ const HomeFoundations = () => {
         "Lokalnym zbiórkom",
     ];
     return (
-        <div className="foundations" id="foundations">
+        <div className="foundations" id="offer">
             <h1>Komu pomagamy?</h1>
-            <img src={decoration} alt="" />
             <ul className="foundations__buttons">
                 {buttons.map((el, index) => {
                     const classActive =
@@ -165,11 +163,6 @@ const HomeFoundations = () => {
                     czego potrzebują.
         </p>
                 <Foundations foundations={currentPosts} />
-                <Pagination
-                    postPerPage={postPerPage}
-                    totalPosts={foundations.length}
-                    paginate={paginate}
-                />
             </div>
             <div
                 className={
@@ -184,11 +177,6 @@ const HomeFoundations = () => {
                     minim veniam, quis nostrud exercitation.
         </p>
                 <Foundations foundations={currentPostsOrg} />
-                <Pagination
-                    postPerPage={postPerPage}
-                    totalPosts={organizations.length}
-                    paginate={paginate}
-                />
             </div>
             <div
                 className={
@@ -203,11 +191,6 @@ const HomeFoundations = () => {
                     minim veniam, quis nostrud exercitation.
         </p>
                 <Foundations foundations={currentPostsLocal} />
-                <Pagination
-                    postPerPage={postPerPage}
-                    totalPosts={local.length}
-                    paginate={paginate}
-                />
             </div>
         </div>
     );

@@ -1,7 +1,6 @@
 import React from 'react';
 import decoration from '../assets/Decoration.svg';
-import signature from '../assets/Signature.svg';
-import team from '../assets/People@2x.png';
+import team from '../assets/CF-cert.png';
 
 export const HomeAboutUs = () => {
     return (
@@ -10,9 +9,13 @@ export const HomeAboutUs = () => {
                 <div className="aboutUs__container">
                     <div className="aboutUs__wrapperText">
                         <h2 className="aboutUs__h2">O nas</h2>
-                        <img src={decoration} className='aboutUs__decorationImage' alt="decoration" />
-                        <p className="aboutUs__text">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
-                        <img src={signature} className='aboutUs__signatureImage aboutUs__signatureImage--toRight' alt="signature" />
+                        <hr className="aboutUs__hr" />
+                        <ul>
+                            <li className="aboutUs__text">Jesteśmy <span className="aboutUs__span">liderem na rynku fotowoltaiki</span> w Polsce.</li>
+                            <li className="aboutUs__text">Montujemy systemy fotowoltaiczne na terenie województw <span className="aboutUs__span">zachodniopomorskiego, pomorskiego i lubuskiego.</span></li>
+                            <li className="aboutUs__text">Dostosowujemy <span className="aboutUs__span">najbardziej innowacyjne rozwiązania w zakresie fotowotlaiki</span>, do potrzeb i możliwości naszych klientów.</li>
+                            <li className="aboutUs__text">Zapewniamy <span className="aboutUs__span">całościowe przygotowanie elektrowni fotowoltaicznej</span>, począwszy od wykonania projektu, aż po przyłączenie do sieci i związane z tym wszelkie administracyjne procedury.</li>
+                        </ul>
                     </div>
 
                     <div className="aboutUs__image">
