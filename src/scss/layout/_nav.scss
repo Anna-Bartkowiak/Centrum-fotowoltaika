@@ -1,8 +1,10 @@
 .nav {
-    height: 13.2rem;
+    height: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: $color-nav;
+    padding: 0 13.5rem 0 14rem;
 
     &__navbarContainer {
         display: flex;
@@ -10,7 +12,7 @@
         align-items: flex-end;
         z-index: 1;
         width: 100%;
-        padding: 2.4rem;
+        color: $color-light;
     }
 
 
@@ -19,34 +21,26 @@
         font-size: 1.4rem;
     }
 
-    &__btn {
-        padding: 2.6rem 0;
+    // &__btn {
+    //     padding: 2.6rem 0;
+    // }
 
-        &:first-child {
-            padding-right: 2rem;
-        }
+    // &__btnLinks {
+    //     color: $color-fonts-signin;
+    //     padding: 0.9rem 1rem;
+    //     text-decoration: none;
+    //     cursor: pointer;
 
-        &:nth-child(2) {
-            padding-right: 3.6rem;
-        }
-    }
+    //     &--active {
+    //         border: 1px solid $color-secondary;
+    //     }
 
-    &__btnLinks {
-        color: $color-fonts-signin;
-        padding: 0.9rem 1rem;
-        text-decoration: none;
-        cursor: pointer;
-
-        &--active {
-            border: 1px solid $color-secondary;
-        }
-
-        &:hover {
-            color: $color-decoration;
-            background: $color-secondary;
-            transition: 0.3s linear;
-        }
-    }
+    //     &:hover {
+    //         color: $color-nav;
+    //         background: $color-secondary;
+    //         transition: 0.3s linear;
+    //     }
+    // }
 
     &__menu {
         height: 4.2rem;
@@ -58,17 +52,18 @@
     }
 
     &__item {
-        padding-right: 3.5rem;
+        // padding-right: 3.5rem;
     }
 
     &__links {
-        padding: 0.9rem 2rem;
-        color: $color-fonts;
+        color: $color-light;
         text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
         cursor: pointer;
+        padding: 1.3rem 2rem;
 
         &:hover {
-            color: $color-primary;
             background: $color-fonts;
             transition: 0.3s linear;
         }

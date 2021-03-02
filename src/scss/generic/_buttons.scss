@@ -1,24 +1,28 @@
 .btn {
-    width: 31rem;
-    padding: 1.3rem 0;
+    width: 27rem;
+    height: 6rem;
     text-transform: uppercase;
     font-family: $font-base;
-    font-weight: 300;
-    font-size: 3.6rem;
-    background-color: $color-white;
-    color: $color-fonts;
-    border: 1px solid $color-fonts;
+    font-size: 1.6rem;
+    line-height: 6rem;
+    font-weight: 700;
+    background-color: $color-secondary;
+    border: 1px solid $color-secondary;
     outline: none;
     overflow: hidden;
     cursor: pointer;
 
+    &--left {
+        margin-right: 2rem;
+    }
+
     &--active {
-        border: 1px solid $color-secondary;
+        color: $color-light;
     }
 
     &:hover {
-        color: $color-decoration;
-        background: $color-secondary;
+        background: $color-nav;
+        color: $color-light;
         transition: 0.3s linear;
     }
 }
@@ -28,21 +32,20 @@
     height: 8.1rem;
     font-family: $font-base;
     font-size: 2.4rem;
-    background-color: $color-white;
+    background-color: $color-light;
     border: none;
-    color: $color-fonts;
     overflow: hidden;
     outline: none;
     cursor: pointer;
 
     .active {
-        border: 1px solid $color-fonts;
+        border: 1px solid $color-light;
     }
 
     &:hover {
-        color: $color-decoration;
         background: $color-secondary;
         transition: 0.3s linear;
+        color: $color-light;
     }
 }
 
@@ -51,9 +54,15 @@
 }
 
 .btnLinks {
-    color: $color-fonts-signin;
+    color: $color-fonts;
     text-decoration: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
+    z-index: 100;
+
+    &:hover {
+        color: $color-light;
+        transition: 0.3s linear;
+    }
 }

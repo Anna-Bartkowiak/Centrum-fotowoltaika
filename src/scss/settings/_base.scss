@@ -11,7 +11,8 @@ html {
 
 body {
   color: $color-fonts;
-  background-color: $color-white;
+  box-sizing: border-box;
+  background-color: $color-primary;
   font-family: $font-base;
   font-size: 1rem;
 }

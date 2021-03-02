@@ -1,30 +1,30 @@
 .sectionHeader {
-    max-width: 190rem;
+    max-width: 144rem;
     margin: 0 auto;
-    // overflow: hidden;
 }
 
 .header {
-    background-position: -500px 0;
+    background-position: top center;
     background-repeat: no-repeat;
 
     &__container {
-        height: 83.1rem;
-        width: 100%;
+        // height: 63rem;
+        // width: 100%;
         display: flex;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         align-items: center;
     }
 
     &__textWrapper {
-        margin: 7.5rem 27.5rem 6.6rem 6.6rem;
-        text-align: center;
+        margin: 11.8rem 83.5rem 14.5rem 13.5rem;
     }
 
     &__textH1 {
-        font-size: 3.8rem;
-        // text-align: center;
-        line-height: 5.5rem;
+        font-size: 4rem;
+        color: $color-light;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 4.74rem;
     }
 
     &__decorationImage {
@@ -35,6 +35,6 @@
     &__buttonsWrapper {
         display: flex;
         justify-content: space-between;
-        margin: 6.5rem 0;
+        margin-top: 7.6rem;
     }
 }
