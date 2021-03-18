@@ -11,6 +11,7 @@
     outline: none;
     overflow: hidden;
     cursor: pointer;
+    padding: 0;
 
     &--left {
         margin-right: 2rem;
@@ -59,7 +60,6 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    z-index: 100;
 
     &:hover {
         color: $color-light;

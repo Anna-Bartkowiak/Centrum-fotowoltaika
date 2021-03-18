@@ -1,5 +1,4 @@
 import React from 'react';
-import decoration from '../assets/Decoration.svg';
 import team from '../assets/CF-cert.png';
 
 export const HomeAboutUs = () => {

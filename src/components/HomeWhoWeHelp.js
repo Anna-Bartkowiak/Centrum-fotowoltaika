@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import decoration from "../assets/Decoration.svg";
 import Foundations from "./Foundations";
 
 const HomeFoundations = () => {
@@ -123,10 +122,10 @@ const HomeFoundations = () => {
         indexOfLastPost
     );
     const currentPostsLocal = local.slice(indexOfFirstPost, indexOfLastPost);
-    const paginate = (pageNumber, index, setActiveIndex) => {
-        setCurrentPage(pageNumber);
-        setActiveIndex(index);
-    };
+    // const paginate = (pageNumber, index, setActiveIndex) => {
+    //     setCurrentPage(pageNumber);
+    //     setActiveIndex(index);
+    // };
     const changeFound = (index) => {
         setActiveButtonIndex(index);
         setCurrentPage(1);

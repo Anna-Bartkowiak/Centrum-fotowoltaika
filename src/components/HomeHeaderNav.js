@@ -10,6 +10,7 @@ export const HomeHeaderNav = () => {
                 <header className='header' style={{ 'backgroundImage': `url(${background})` }}>
                     <nav className='nav'>
                         <div className='nav__navbarContainer'>
+                            <p className='nav__logo'>centrum<br /><span className='nav__logoSpan'>fotowoltaiki</span></p>
                             <ul className='nav__menu'>
                                 <li className='nav__item'>
                                     <NavLink
