@@ -1,9 +1,16 @@
+.sectionNav {
+    max-width: 144rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+
 .nav {
     height: 9rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $color-nav;
+    background-color: $color-nav;
     padding: 0 13.5rem 0 14rem;
 
     &__navbarContainer {
@@ -31,27 +38,6 @@
         font-size: 1.4rem;
     }
 
-    // &__btn {
-    //     padding: 2.6rem 0;
-    // }
-
-    // &__btnLinks {
-    //     color: $color-fonts-signin;
-    //     padding: 0.9rem 1rem;
-    //     text-decoration: none;
-    //     cursor: pointer;
-
-    //     &--active {
-    //         border: 1px solid $color-secondary;
-    //     }
-
-    //     &:hover {
-    //         color: $color-nav;
-    //         background: $color-secondary;
-    //         transition: 0.3s linear;
-    //     }
-    // }
-
     &__menu {
         height: 4.2rem;
         display: flex;
@@ -59,10 +45,6 @@
         list-style: none;
         text-align: center;
         font-size: 1.8rem;
-    }
-
-    &__item {
-        // padding-right: 3.5rem;
     }
 
     &__links {
@@ -74,12 +56,8 @@
         padding: 1.3rem 2rem;
 
         &:hover {
-            background: $color-fonts;
+            background: $color-fonts-primary;
             transition: 0.3s linear;
         }
     }
 }
-
-// .active {
-//     border: 1px solid $color-fonts;
-// }

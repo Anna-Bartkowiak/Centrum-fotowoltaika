@@ -1,5 +1,5 @@
 import React from 'react';
-import team from '../assets/CF-cert.png';
+import certificate from '../assets/CF-cert.jpg';
 
 export const HomeAboutUs = () => {
     return (
@@ -18,7 +18,7 @@ export const HomeAboutUs = () => {
                     </div>
 
                     <div className="aboutUs__image">
-                        <img src={team} className='aboutUs__teamImage' alt="team" />
+                        <img src={certificate} className='aboutUs__teamImage' alt="certificate" />
                     </div>
                 </div>
             </section>

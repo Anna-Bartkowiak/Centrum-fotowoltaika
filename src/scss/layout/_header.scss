@@ -1,6 +1,9 @@
 .sectionHeader {
     max-width: 144rem;
     margin: 0 auto;
+    margin-top: -90px;
+    position: relative;
+    z-index: 1;
 }
 
 .header {
@@ -13,7 +16,7 @@
     }
 
     &__textWrapper {
-        margin: 11.8rem 0 14.5rem 13.5rem;
+        margin: 20.8rem 0 14.5rem 13.5rem;
     }
 
     &__textH1 {

@@ -1,0 +1,181 @@
+.sectionOffer{
+    max-width: 144rem;
+    margin: 0 auto;
+    font-family: 'Rubik', sans-serif;
+
+    &__container {
+        width: 100%;
+        max-width: 117rem;
+        margin: 0 auto;
+        padding: 7.2rem 0;
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        font-weight: 500;
+    }
+
+    &__h2 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        padding-bottom: .8rem;
+        font-weight: 700;
+    }
+
+    &__hr {
+        border: 0;
+        height: 6px;
+        background: $color-secondary;
+        width: 40px;
+        display: inline-block;
+        margin-bottom: 3rem;
+    }
+
+    &__text {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        font-weight: 600;
+        margin-bottom: 6rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3
+        , 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+
+        @media screen and (max-width: 1000px) {
+            grid-template-columns: repeat(2
+             , 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:
+                "item1"
+                "item2"
+                "item3"
+                "item4"
+                "item5"
+                "item6";
+            .item-1 {
+                grid-area: item1;
+            }
+            .item-2 {
+                grid-area: item2;
+            }
+            .item-3 {
+                grid-area: item3;
+            }
+            .item-4 {
+                grid-area: item4;
+            }
+            .item-5 {
+                grid-area: item5;
+            }
+            .item-6 {
+                grid-area: item6;
+            }
+        }
+    }
+
+    &__textBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        // width: 37rem;
+        height: 16.7rem;
+        background-color: $color-white;
+        text-transform: uppercase;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        color: $color-tertiary;
+        position: relative;
+    }
+
+    &__itemNumber {
+        position: absolute;
+        font-family: 'Rubik', sans-serif;
+        bottom: -25px;
+        right: -8px;
+        font-size: 12rem;
+        color: $color-primary;
+        line-height: 12rem;
+    }
+
+    &__tabs {
+        max-width: 117rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 12rem 0 6rem 0;
+        color: $color-tertiary;
+
+        @media screen and (max-width: 576px) {
+            padding: 4rem 1rem;
+        }
+    }
+
+    &__tabList {
+        border-bottom: 6px solid $color-fonts-secondary;
+
+        > button {
+            font-size: 2.4rem;
+            line-height: 2.8rem;
+            border: none;
+            background-color: transparent;
+            padding: 1rem 1.5rem;
+            margin-bottom: -6px;
+            outline: none;
+            color: $color-tertiary;
+            font-weight: 400;
+        }
+
+        .active {
+            border-bottom: 6px solid $color-secondary;
+            color: $color-fonts-primary;
+            font-weight: 600;
+        }
+    }
+
+    &__tabWrapper {
+        display: grid;
+        grid-template-columns: repeat(2
+        , 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 2rem;
+        height: 58.4rem;
+        padding: 8rem 0;
+        background-color: $color-white;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        align-items: center;
+    }
+
+    &__textWrapper {
+        padding: 0 5rem;
+
+        > p {
+            padding-bottom: 2rem;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__boldP {
+        font-weight: 600;
+    }
+
+    &__textUl {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+    }
+}

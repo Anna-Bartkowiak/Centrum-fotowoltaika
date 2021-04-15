@@ -1,16 +1,20 @@
 import React from 'react';
-import HomeHeaderNav from './HomeHeaderNav';
+import HomeHeader from './HomeHeader';
+import Navigation from './Navigation';
 import HomeAboutUs from './HomeAboutUs';
-import HomeWhoWeHelp from './HomeWhoWeHelp';
-// import HomeContact from './HomeContact';
+import Offer from './Offer';
+import GallerySection from './Gallery';
+import Contact from './Contact';
 
 export const Home = () => {
     return (
         <>
-            <HomeHeaderNav />
+            <Navigation />
+            <HomeHeader />
             <HomeAboutUs />
-            <HomeWhoWeHelp />
-            {/* <HomeContact /> */}
+            <Offer />
+            <GallerySection />
+            <Contact />
         </>
     );
 };
