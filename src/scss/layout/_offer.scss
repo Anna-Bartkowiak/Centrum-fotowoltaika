@@ -89,13 +89,12 @@
         align-items: center;
         text-align: center;
         overflow: hidden;
-        // width: 37rem;
         height: 16.7rem;
         background-color: $color-white;
         text-transform: uppercase;
         font-size: 2rem;
         line-height: 2.4rem;
-        font-weight: 700;
+        font-weight: 500;
         color: $color-tertiary;
         position: relative;
     }
@@ -104,7 +103,7 @@
         position: absolute;
         font-family: 'Rubik', sans-serif;
         bottom: -25px;
-        right: -8px;
+        right: 0;
         font-size: 12rem;
         color: $color-primary;
         line-height: 12rem;

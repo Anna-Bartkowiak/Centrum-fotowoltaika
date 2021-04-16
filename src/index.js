@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import "typeface-open-sans";
-import "typeface-merriweather";
+import "typeface-rubik";
 
 ReactDOM.render(
   <React.StrictMode>
